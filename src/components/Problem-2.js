@@ -91,8 +91,8 @@ const Problem2 = () => {
 
     // Render the component
     return (
-        <div className="container">
-            <div className="row justify-content-center mt-5">
+        <div className="container" style={{display: "flex", justifyContent: "center"}}>
+            <div className="row justify-content-center mt-5 problem-1">
                 <h4 className="text-center text-uppercase mb-5">Problem-2</h4>
 
                 {/* Buttons for filtering contacts */}
@@ -114,7 +114,7 @@ const Problem2 = () => {
                 </div>
 
                 {/* Search input and clear button */}
-                <div className="form-group search-box mt-4">
+                <div className="form-group search-box mt-4" style={{position: "relative"}}>
                     <input
                         type="text"
                         className="form-control"

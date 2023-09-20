@@ -39,8 +39,8 @@ const Problem1 = () => {
 
     // Render the user interface.
     return (
-        <div className="container">
-            <div className="row justify-content-center mt-5">
+        <div className="container" style={{display: "flex", justifyContent: "center"}}>
+            <div className="row justify-content-center mt-5 problem-1">
                 <h4 className='text-center text-uppercase mb-5'>Problem-1</h4>
                 <div className="col-6">
                     {/* User input form */}
@@ -48,8 +48,8 @@ const Problem1 = () => {
                         <div className="col-auto">
                             <input type="text" name='name' className="form-control" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
-                        <div className="col-auto">
-                            <select name="status" className="form-select" value={status} onChange={handleChangeStatus}>
+                        <div className="col-auto select-wrapper">
+                            <select name="status" className="form-select select" value={status} onChange={handleChangeStatus}>
                                 <option value="active">Active</option>
                                 <option value="completed">Completed</option>
                             </select>
